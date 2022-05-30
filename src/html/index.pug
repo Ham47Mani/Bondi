@@ -1,0 +1,57 @@
+extends pug/helpers/_pageStructore
+
+//-
+  =======================================================
+  In this a block for including page or anythings
+  =======================================================
+block includes
+  include pug/helpers/_helpers
+
+//-
+  =======================================================
+  In this a block we can create a variables for this page
+  =======================================================
+block variables
+  - var Title = "Bondi";
+//-
+  =======================================================
+  In this a block for add CSS file for this page
+  =======================================================
+block stylesheet
+  title #{Title}
+  //- Add a logo icon for title bar
+  link(rel="shortcut icon", href="imgs/logo.png", type="image/x-icon")
+  //- Normalize Library
+  link(rel="stylesheet", href="css/normalize.css")
+  //- Fontawesome Library
+  link(rel="stylesheet", href="css/fontawesome.min.css")
+  //- Bootstrap Framework
+  link(rel="stylesheet", href="css/bootstrap.min.css")
+  //- Add Roboto Font From Google Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap' rel='stylesheet')
+  //- Bondi Style File
+  link(rel="stylesheet", href="css/bondi.css")
+
+
+//-
+  ====================================================================================================================
+                                              In this a block for page content
+  ====================================================================================================================
+block content 
+  //- ***************************************** Start Setting Box *****************************************
+  p.h1 Hello World
+  <i class="fa-brands fa-500px"></i>
+
+//-
+  ====================================================================================================================
+  In this a block for add Js file for this page
+  ====================================================================================================================
+block script
+  //- Bootstrap Framework
+  script(src="js/bootstrap.bundle.min.js")
+  //- Fontawesome library
+  script(src="js/fontawesome.min.js")
+  //- Bondi Javascript File
+  script(src="js/bondi-min.js") 
