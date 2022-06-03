@@ -21,16 +21,16 @@ block stylesheet
   title #{Title}
   //- Add a logo icon for title bar
   link(rel="shortcut icon", href="imgs/logo.png", type="image/x-icon")
+  //- Add Roboto Font From Google Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap' rel='stylesheet')
   //- Normalize Library
   link(rel="stylesheet", href="css/normalize.css")
   //- Fontawesome Library
   link(rel="stylesheet", href="css/fontawesome.min.css")
   //- Bootstrap Framework
   link(rel="stylesheet", href="css/bootstrap.min.css")
-  //- Add Roboto Font From Google Fonts
-  link(rel='preconnect' href='https://fonts.googleapis.com')
-  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
-  link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap' rel='stylesheet')
   //- Bondi Style File
   link(rel="stylesheet", href="css/bondi.css")
 
@@ -40,18 +40,39 @@ block stylesheet
                                               In this a block for page content
   ====================================================================================================================
 block content 
-  //- ***************************************** Start Setting Box *****************************************
-  p.h1 Hello World
-  <i class="fa-brands fa-500px"></i>
+  //- ***************************************** Start Nav *****************************************
+  nav#navbar.navbar.navbar-expand-lg.sticky-top
+    .container-fluid 
+      a.navbar-brand(href="#")
+        img(src="imgs/logo.png", alt="Bondi Logo")
+      button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation")
+        span.fa-solid.fa-bars
+      #mainNav.collapse.navbar-collapse
+        ul.navbar-nav.ms-auto.mb-2.mb-lg-0  
+          li.nav-item
+            a.nav-link.p-lg-3.p-2.active(aria-current="page", href="#") Home
+          li.nav-item
+            a.nav-link.p-lg-3.p-2(aria-current="page", href="#") Services
+          li.nav-item
+            a.nav-link.p-lg-3.p-2(aria-current="page", href="#") Portfolios
+          li.nav-item
+            a.nav-link.p-lg-3.p-2(aria-current="page", href="#") About
+          li.nav-item
+            a.nav-link.p-lg-3.p-2(aria-current="page", href="#") Contact
+        .search.px-3.d-none.d-lg-block
+          i.fa-solid.fa-magnifying-glass 
+        a.btn.main-btn.rounded-pill.btn-danger(href="#") Login
+  //- ***************************************** End Nav *****************************************
+  
 
 //-
   ====================================================================================================================
   In this a block for add Js file for this page
   ====================================================================================================================
 block script
-  //- Bootstrap Framework
-  script(src="js/bootstrap.bundle.min.js")
   //- Fontawesome library
   script(src="js/fontawesome.min.js")
+  //- Bootstrap Framework
+  script(src="js/bootstrap.bundle.min.js")
   //- Bondi Javascript File
   script(src="js/bondi-min.js") 

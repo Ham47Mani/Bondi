@@ -1,5 +1,36 @@
 // ====================================== Start Global Rules ======================================
+//-------- Variables
+$dark-color: #19283f;
+$main-color: #33d1cc;
+
 * { box-sizing: border-box }
 body { font-family: 'Roboto', sans-serif }
-
+// .btn-danger { background-color:  }
 // ====================================== End Global Rules ======================================
+
+// ====================================== Start Nav ======================================
+nav {
+  background-color: $dark-color;
+
+  .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+    &:focus { box-shadow: none }
+  }
+  .navbar-nav .nav-link {
+      color: white;
+      &.active, &:hover, &:focus {
+        color: $main-color;
+      }
+  }
+  .search {
+    border-left: 1px solid $main-color;
+    cursor: pointer;
+    svg {
+      color: $main-color;
+      &:hover { color: white }
+    }
+  }
+}
+// ====================================== End Nav ======================================

@@ -7,19 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bondi</title>
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bondi.css">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <p class="h1">Hello World</p><i class="fa-brands fa-500px"></i>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid"> <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="Bondi Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa-solid fa-bars"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+            <li class="nav-item"><a class="nav-link p-lg-3 p-2 active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link p-lg-3 p-2" aria-current="page" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link p-lg-3 p-2" aria-current="page" href="#">Portfolios</a></li>
+            <li class="nav-item"><a class="nav-link p-lg-3 p-2" aria-current="page" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link p-lg-3 p-2" aria-current="page" href="#">Contact</a></li>
+          </ul>
+          <div class="search px-3 d-none d-lg-block"><i class="fa-solid fa-magnifying-glass"> </i></div><a class="btn main-btn rounded-pill btn-danger" href="#">Login</a>
+        </div>
+      </div>
+    </nav>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=1"></' + 'script>')</script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bondi-min.js"> </script>
   </body>
 </html>
