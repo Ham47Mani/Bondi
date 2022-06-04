@@ -102,6 +102,48 @@ block content
             h4.text-uppercase.mt-3 App design
             p.text-black-50.lh-lg Pellentesue is ipsum id orci porta dapibus. Vivamus magna justo, laciania eget consectetur sed, convallis at tellus.
   //- ***************************************** End Features *****************************************
+
+  //- ***************************************** Start Our Work *****************************************
+  section#ourWork.our-work.text-center.py-5
+    .container 
+      .main-title.my-5.position-relative
+        img.mb-4(src="imgs/title.png", alt="Image Title")
+        h2 We Make This
+        p.text-black-50.text-uppercase Prepare To Be Amazed
+      ul.list-unstyled.d-flex.justify-content-center.my-5 
+        li.active(data-work="all") All 
+        li(data-work="design") Design
+        li(data-work="code") Code
+        li(data-work="photo") Photo
+        li(data-work="app") App
+      .row 
+        .col-sm-6.col-md-4.col-lg-3.all.code
+          .box.mb-3.bg-white.position-relative.border(data-work="Code")
+            img.img-fluid(src="imgs/work-01.jpg", alt="Work 1")
+        .col-sm-6.col-md-4.col-lg-3.all.design 
+          .box.mb-3.bg-white.position-relative.border(data-work="Design")
+            img.img-fluid(src="imgs/work-02.jpg", alt="Work 1")
+        .col-sm-6.col-md-4.col-lg-3.all.app 
+          .box.mb-3.bg-white.position-relative.border(data-work="Application")
+            img.img-fluid(src="imgs/work-03.jpg", alt="Work 1")
+        .col-sm-6.col-md-4.col-lg-3.all.photo 
+          .box.mb-3.bg-white.position-relative.border(data-work="Photo")
+            img.img-fluid(src="imgs/work-04.jpg", alt="Work 1")
+        .col-sm-6.col-md-4.col-lg-3.all.design 
+          .box.mb-3.bg-white.position-relative.border(data-work="Design")
+            img.img-fluid(src="imgs/work-05.jpg", alt="Work 1")
+        .col-sm-6.col-md-4.col-lg-3.all.design 
+          .box.mb-3.bg-white.position-relative.border(data-work="Design")
+            img.img-fluid(src="imgs/work-06.jpg", alt="Work 1")
+        .col-sm-6.col-md-4.col-lg-3.all.photo 
+          .box.mb-3.bg-white.position-relative.border(data-work="Photo")
+            img.img-fluid(src="imgs/work-07.jpg", alt="Work 1")
+        .col-sm-6.col-md-4.col-lg-3.all.code 
+          .box.mb-3.bg-white.position-relative.border(data-work="Code")
+            img.img-fluid(src="imgs/work-08.jpg", alt="Work 1")
+      .d-flex.justify-content-center.mt-5
+        a.btn.rounded-pill.main-btn.text-uppercase.px-5(href="#") I want more...  
+  //- ***************************************** End Our Work *****************************************
   
 
 //-
