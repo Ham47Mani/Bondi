@@ -2,10 +2,18 @@
 //-------- Variables
 $dark-color: #19283f;
 $main-color: #33d1cc;
+$main-btn : #ff3150;
 
 * { box-sizing: border-box }
 body { font-family: 'Roboto', sans-serif }
-// .btn-danger { background-color:  }
+.main-btn {
+  background-color: $main-btn;
+  color: white;
+  padding: 0.5rem 1rem;
+  &:hover {
+    color: #ffc400;
+  }
+}
 // ====================================== End Global Rules ======================================
 
 // ====================================== Start Nav ======================================
@@ -34,3 +42,11 @@ nav {
   }
 }
 // ====================================== End Nav ======================================
+
+// ====================================== Start Header ======================================
+header {
+  background-color: $dark-color;
+  min-height: calc(100vh - 72px);
+  h1 { font-weight: 300 !important }
+}
+// ====================================== End Header ======================================
