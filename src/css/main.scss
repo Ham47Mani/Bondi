@@ -3,6 +3,8 @@
 $dark-color: #19283f;
 $main-color: #33d1cc;
 $main-btn : #ff3150;
+$yellow: #ffc400;
+$section-color: #eff7fa;
 
 * { box-sizing: border-box }
 body { font-family: 'Roboto', sans-serif }
@@ -11,7 +13,19 @@ body { font-family: 'Roboto', sans-serif }
   color: white;
   padding: 0.5rem 1rem;
   &:hover {
-    color: #ffc400;
+    color: $yellow;
+  }
+}
+.main-title {
+  &::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: $main-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 // ====================================== End Global Rules ======================================
@@ -50,3 +64,23 @@ header {
   h1 { font-weight: 300 !important }
 }
 // ====================================== End Header ======================================
+
+// ====================================== Start Features ======================================
+.features {
+  .feat {
+    .icon-holder {
+      height: 200px;
+      svg {
+        left: 50%;
+        transform: translateX(-50%);
+        &.number {
+          font-size: 12rem;
+          color: $section-color;
+        }
+        &.icon { color: $main-color }
+      } 
+    }
+    h4 { color: $yellow }
+  }
+}
+// ====================================== End Features ======================================
