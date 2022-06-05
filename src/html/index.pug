@@ -192,6 +192,23 @@ block content
             h4.text-light.p-3 Luke Skywlaker 
             blockquote.text-black-50.p-3 "I don't understand how we got by those troops. I throught we were dead."
   //- ***************************************** End Team *****************************************
+
+  //- ***************************************** Start Techs *****************************************
+  #techs.techs.py-5.text-center 
+    .container 
+      .row.align-items-center
+        -for(var i = 1; i < 7; i = i + 1)
+          .col-sm-2.col-md-4.col-lg-2.my-3 
+            img.img-fluid(src="imgs/tech-" + i + ".png", alt="tech " + i)
+  //- ***************************************** End Techs *****************************************
+
+  //- ***************************************** Start Project *****************************************
+  section#project.project.py-5.text-center.text-light 
+    h2.mb-4 Start Your Project Now 
+    p.text-white-50 Leave your description and we start the engine. Don't worry, you can cancel ayntime.
+    .d-flex.justify-content-center.mt-5
+        a.btn.rounded-pill.main-btn.text-uppercase.px-5(href="#") Start Project
+  //- ***************************************** End Project *****************************************
   
 
 //-
