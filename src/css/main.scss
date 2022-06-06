@@ -149,7 +149,21 @@ header {
 // ====================================== End Team ======================================
 
 // ====================================== Start Project ======================================
-.project {
-  background-color: $dark-color;
-}
+.project { background-color: $dark-color }
 // ====================================== End Project ======================================
+
+// ====================================== Start Subscribe ======================================
+.subscribe {
+  background-color: $yellow;
+  form {
+    input[type="email"] {
+      &:focus { outline: none }
+    }
+    input[type="submit"] {
+      background-color: $dark-color;
+      color: $yellow; 
+    }
+    ::placeholder { color: white }
+  }
+}
+// ====================================== End Subscribe ======================================
