@@ -167,3 +167,28 @@ header {
   }
 }
 // ====================================== End Subscribe ======================================
+
+// ====================================== Start Footer ======================================
+footer {
+  background-color: $dark-color;
+  .copyright {
+    & > span {
+      color: $main-color;
+    }
+    div span {
+      color: $yellow;
+    }
+  }
+  .contact {
+    svg {
+      width: 20px;
+      height: 20px;
+      color: white;
+      &.facebook { background-color: #1877f2 }
+      &.twitter { background-color: #1da1f2 }
+      &.linkedin { background-color: #0077b5 }
+      &.youtube { background-color: #ff0000 }
+    }
+  }
+}
+// ====================================== End Footer ======================================
